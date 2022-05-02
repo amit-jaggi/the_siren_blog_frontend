@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Ubuntu:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* ---------------------- Navbar Component styling ---------------------- */
+.logo {
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 45px 0 20px 0;
+  cursor: default;
+}
+
+.logo .text-vertical {
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+  font-size: 21px;
+  transform: rotate(270deg);
+  letter-spacing: 2px;
+  padding: 0 5px;
+}
+
+.logo .text-capital {
+  text-transform: capitalize;
+  font-size: 4em;
+  margin-left: -5px;
+}
+
+.nav-links {
+  margin: 0 10%;
+  font-family: 'Poppins', sans-serif;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-links .link {
+  text-decoration: none;
+  color: black;
+  padding: 1px 12px;
+  position: relative;
+}
+
+.nav-links .link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  left: 0;
+  bottom: 0;
+  background: #ea0e4b;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease;
+}
+
+.nav-links .link:hover::after {
+  transform: scale(1, 1);
+}
+
+.horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 1% 10%;
+  height: 2px;
+}
+
+
+/* ---------------------- Home Component styling ---------------------- */
+.home-container {
+  margin: 2.5% auto;
+}
+
+.home-container .banner-container {
+  margin: auto 10%;
+  display: flex;
+}
+
+.home-container .banner-container .banner-1 {
+  text-align: left;
+}
+
+.home-container .banner-container .banner-1 .banner-image-1 {
+  width: 98.5%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.home-container .banner-container .banner-1 .banner-text1 {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(65%, -200%);
+}
+
+.home-container .banner-container .banner-1 .banner-text2 {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(100%, -220%);
+}
+
+.home-container .banner-container .banner-2 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-container .banner-container .banner-2 .banner-image-2 {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+
+/* ---------------------- The Latest Component styling ---------------------- */
+.the-latest-container {
+  margin: 5% 10%;
+}
+
+.the-latest-container .the-latest-heading {
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Ubuntu' , sans-serif;
+  margin: 5% 0 4% 0;
+  position: relative;
+}
+
+.the-latest-container .the-latest-heading:after {
+  content: '';
+  display: block;
+  width: 7%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #ea0e4b;
+}
+
+.the-latest-container .the-latest-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.the-latest-container .the-latest-body .the-latest-card {
+  width: 32%;
+  height: 450px;
+  display: flex;
+}
+
+.the-latest-container .the-latest-body .the-latest-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.the-latest-container .the-latest-body .the-latest-card .the-latest-title {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: left;
+  margin: 20px;
+}
+
+.the-latest-container .the-latest-body .the-latest-card .the-latest-desc{
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  text-align: left;
+  color: darkgray;
+  margin: 20px;
+}
+
+.the-latest-container .the-latest-body .the-latest-card .the-latest-date {
+  color: darkgray;
+  text-align: left;
+  margin: 20px;
+}
+
+.the-latest-container .the-latest-body .the-latest-card .the-latest-date .the-latest-category {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+
+/* ---------------------- Latest Stories Component styling ---------------------- */
+.the-latest-container .latest-stories-horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 3.5% auto;
+  height: 2px;
+}
+
+/* ---------------------- Latest Articles Component styling ---------------------- */
+.latest-article-container {
+  margin: 7% 10%;
+  height: 100%;
+}
+
+.latest-article-container .latest-articles-heading {
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Ubuntu' , sans-serif;
+  margin: 4% 0 1% 0;
+  position: relative;
+}
+
+.latest-article-container .latest-articles-heading:after {
+  content: '';
+  display: block;
+  width: 7%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #ea0e4b;
+}
+
+.latest-article-container .articles-division {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.latest-article-container .articles-division .article-bar {
+  width: 100%;
+  padding: 0 10px 10px 0;
+}
+
+.latest-article-container .articles-division .article-bar .latest-articles {
+  margin: 2% 2%;
+  display: flex;
+}
+
+.latest-article-container .articles-division .article-bar .latest-articles .latest-articles-image {
+  width: 40%;
+  height: 12%;
+  object-fit: cover;
+}
+
+.latest-article-container .articles-division .article-bar .latest-articles .latest-article-details {
+  margin-left: 15px;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: darkgray;
+}
+
+.latest-article-container .articles-division .article-bar .latest-articles .latest-article-details .latest-article-heading {
+  font-size: 24px;
+  color: black;
+}
+
+.latest-article-container .articles-division .article-bar .latest-articles .latest-article-details .latest-article-body {
+  font-size: 13px;
+  color: darkgray;
+}
+
+.latest-article-container .articles-division .article-bar .latest-articles .latest-article-details .latest-article-category {
+  color: black;
+}
+
+.latest-article-container .articles-division .article-bar .article-horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 3.5% auto;
+  height: 2px;
+}
+
+
+/* --------------------- Top Stories Component styling ---------------------  */
+.latest-article-container .articles-division .top-stories {
+  width: 55%;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  height: 1132px;
+}
+
+.latest-article-container .articles-division .top-stories .advertisement {
+  border: 1px solid #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+  height: 30%;
+  font-size: 28px;
+}
+
+.latest-article-container .articles-division .top-stories .top-stories-heading {
+  font-size: 30px;
+  margin: 3% 3% 7% 3%;
+  position: relative;
+}
+
+.latest-article-container .articles-division .top-stories .top-stories-heading:after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #ea0e4b;
+}
+
+.latest-article-container .articles-division .top-stories .top-stories-horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 5% 3%;
+  height: 2px;
+}
+
+.latest-article-container .articles-division .top-stories .top-stories-container {
+  color: black;
+  margin: 3%;
+  display: flex;
+  align-items: center;
+}
+
+.latest-article-container .articles-division .top-stories .top-stories-container .top-stories-image {
+  width: 40%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.latest-article-container .articles-division .top-stories .top-stories-container .top-stories-content {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.latest-article-container .articles-division .top-stories .top-stories-container .top-stories-content .top-stories-title {
+  font-size: 15px;
+}
+
+.latest-article-container .articles-division .top-stories .top-stories-container .top-stories-content p {
+  color: darkgray;
+}
+.latest-article-container .articles-division .top-stories .top-stories-container .top-stories-content p .top-stories-category {
+  color: black;
+}
+
+/* ------------------------- Category Component Styling ------------------------- */
+.category-container {
+  margin: 0 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-container .category-heading {
+  text-align: left;
+  margin: 5% 4%;
+  font-size: 30px;
+  font-family: 'Ubuntu' , sans-serif;
+  position: relative;
+}
+
+.category-container .category-heading:after {
+  content: '';
+  display: block;
+  width: 10%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #ea0e4b;
+}
+
+.category-container .category-main {
+  width: 66%;
+}
+.category-container .category-main .content-container{
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.category-container .category-main .content-container .category-main-images {
+  width: 42%;
+  height: 12%;
+  object-fit: cover;
+}
+
+.category-container .category-main .content-container .content-division {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.category-container .category-main .content-container .content-division .content-main-title {
+  font-size: 24px;
+}
+
+.category-container .category-main .content-container .content-division .content-main-body {
+  font-size: 13px;
+  color: darkgray;
+}
+
+.category-container .category-main .content-container .content-division .content-main-date {
+  color: darkgray;
+}
+.category-container .category-main .content-container .content-division .content-main-category {
+  font-size: 17px;
+}
+
+.category-container .category-main .category-horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 4% 3%;
+  height: 2px;
+}
+
+.category-container .category-top-post {
+  width: 33%;
+}
+
+.category-container .category-top-post .content-top-post-container {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.category-container .category-top-post .content-top-post-container .content-top-post-images {
+  width: 50%;
+  height: 10%;
+  object-fit: cover;
+}
+.category-container .category-top-post .content-top-post-container .content-top-post-division {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.category-container .category-top-post .content-top-post-container .content-top-post-division .content-top-post-category {
+  font-size: 14px;
+}
+
+.category-container .category-top-post .content-top-post-container .content-top-post-division .content-top-post-category .content-top-post-date {
+  color: darkgray;
+}
+
+.category-container .category-top-post .category-horizontal-line{
+  background-color: #D5D5D5;
+  border: none;
+  margin: 4% 6%;
+  height: 2px;
+}
+
+.category-container .category-top-post .advertisement {
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #707070;
+  margin: 5% 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  font-size: 24px;
+}
+
+
+/* ------------------------- Article Component Styling ------------------------- */
+.main-article-container {
+  margin: 3% 30%;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  cursor: default;
+}
+
+.main-article-container .article-title {
+  font-size: 26px;
+  margin: 3% auto;
+}
+
+.main-article-container .article-image {
+  text-align: center;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-article-container .article-body, .article-context, .article-description {
+  margin: 4% auto;
+}
+
+.main-article-container .article-category-clap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-article-container .article-category-clap .article-category {
+  padding: 10px;
+  background-color: #F2F2F2;
+  color: #A2A2A2;
+  border-radius: 5px;
+}
+
+.main-article-container .article-category-clap .article-clap {
+  display: flex;
+  align-items: center;
+}
+
+.main-article-container .article-category-clap .article-clap .article-clap-image {
+  height: 30px;
+  margin: 10px;
+}
+
+.main-article-container .article-horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 3% auto;
+  height: 2px;
+}
+
+.main-article-container .article-user {
+  display: flex;
+  align-items: center;
+}
+
+.main-article-container .article-user .artice-user-image {
+  height: 100px;
+}
+
+.main-article-container .article-user .article-user-division {
+  margin: auto 3%;
+}
+
+.main-article-container .article-user .article-user-division .article-user-written {
+  text-transform: uppercase;
+  color: #A2A2A2;
+}
+
+.main-article-container .article-user .article-user-division .article-user-date {
+  color: #A2A2A2;
+}
+
+
+/* ------------------------- More from the Siren Component Styling ------------------------- */
+.moresiren-container {
+  background-color: #FAFAFA;
+  font-family: 'Poppins', sans-serif;
+  cursor: default;
+  text-align: left;
+  padding: 3% 6%;
+}
+
+.moresiren-container .moresiren-heading {
+  font-size: 30px;
+}
+
+.moresiren-container .moresiresn-horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 2% auto;
+  height: 2px;
+}
+
+.moresiren-container .moresiren-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.moresiren-container .moresiren-items .moresiren-box {
+  width: 30%;
+}
+
+.moresiren-container .moresiren-items .moresiren-box .moresiren-info {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #A2A2A2;
+}
+
+.moresiren-container .moresiren-items .moresiren-box  .moresiren-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.moresiren-container .moresiren-items .moresiren-box .moresiren-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.moresiren-container .moresiren-items .moresiren-box .moresiren-user-box {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+
+.moresiren-container .moresiren-items .moresiren-box .moresiren-user-box .moresiren-user {
+  height: 80px;
+}
+
+.moresiren-container .moresiren-items .moresiren-box .moresiren-user-box .moresiren-user-details {
+  margin: auto 3%;
+}
+
+.moresiren-container .moresiren-items .moresiren-box .moresiren-user-box .moresiren-user-details .moresiren-date {
+  color: #A2A2A2;
+}
