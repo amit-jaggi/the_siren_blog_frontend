@@ -10,6 +10,7 @@ export default function Category() {
 
     useEffect(
         () => {
+            document.title = categories;
             let isMounted = true; 
             axios.get(`https://thesirenblog-backend-app.herokuapp.com/api/v1/sirenBlog/${categories}`)
             .then(

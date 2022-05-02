@@ -12,6 +12,7 @@ const Home = () => {
     
     useEffect(
         () => {
+            document.title = "The Siren";
             setRandomNo(Math.floor(Math.random() * ((5 - 1) + 1)) + 1);
 
             axios.get("https://thesirenblog-backend-app.herokuapp.com/api/v1/sirenBlog/")
